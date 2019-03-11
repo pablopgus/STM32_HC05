@@ -425,7 +425,7 @@ U 1 1 5BC9A7EC
 P 2300 3200
 F 0 "Y1" V 2300 3150 50  0000 L CNN
 F 1 "25MHz" V 2300 2850 50  0000 L CNN
-F 2 "Crystals:Crystal_SMD_2520-4pin_2.5x2.0mm" H 2300 3200 50  0001 C CNN
+F 2 "User_library:OSCCC320X250X60N" H 2300 3200 50  0001 C CNN
 F 3 "https://es.rs-online.com/web/p/osciladores-crystal/1732365/" H 2300 3200 50  0001 C CNN
 	1    2300 3200
 	0    1    1    0   
@@ -707,7 +707,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 6050 2400 6050
 $Comp
-L myKicadlib:MOUDLE-BLUETOOTH-HC-05(34P-27X13MM) U2
+L Digital-rescue:MOUDLE-BLUETOOTH-HC-05(34P-27X13MM)-myKicadlib U2
 U 1 1 5BCE726A
 P 8150 2100
 F 0 "U2" H 8150 3017 50  0000 C CNN

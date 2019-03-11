@@ -19,7 +19,7 @@ L MCU_ST_STM32F7:STM32F746VGTx U1
 U 1 1 5BC85E82
 P 3600 4250
 F 0 "U1" H 2935 1560 50  0000 C CNN
-F 1 "STM32F746VGT6" H 2805 1425 50  0000 C CNN
+F 1 "STM32F746VGTx" H 2805 1425 50  0000 C CNN
 F 2 "myKiCADLibrary:LQFP100" H 2900 1650 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00166116.pdf" H 3600 4250 50  0001 C CNN
 	1    3600 4250
@@ -189,7 +189,7 @@ L pspice:INDUCTOR L1
 U 1 1 5BC8793C
 P 4200 1200
 F 0 "L1" H 4200 1415 50  0000 C CNN
-F 1 "22uH" H 4200 1324 50  0000 C CNN
+F 1 "INDUCTOR" H 4200 1324 50  0000 C CNN
 F 2 "Inductors_SMD:L_0805" H 4200 1200 50  0001 C CNN
 F 3 "https://es.rs-online.com/web/p/inductores-de-montaje-en-superficie-multicapa/1669539/" H 4200 1200 50  0001 C CNN
 	1    4200 1200
@@ -554,7 +554,7 @@ L Device:Q_NMOS_GSD Q1
 U 1 1 5BCA8148
 P 9950 4200
 F 0 "Q1" H 10155 4246 50  0000 L CNN
-F 1 "BSS138" H 10155 4155 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 10155 4155 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 10150 4300 50  0001 C CNN
 F 3 "https://es.rs-online.com/web/p/transistores-mosfet/6710324/" H 9950 4200 50  0001 C CNN
 	1    9950 4200
@@ -707,11 +707,11 @@ Wire Wire Line
 Wire Wire Line
 	2700 6050 2400 6050
 $Comp
-L myKicadlib:MOUDLE-BLUETOOTH-HC-05(34P-27X13MM) U2
+L Digital-rescue:MOUDLE-BLUETOOTH-HC-05(34P-27X13MM)-myKicadlib U2
 U 1 1 5BCE726A
 P 8150 2100
 F 0 "U2" H 8150 3017 50  0000 C CNN
-F 1 "Bluetooth HC05 Module" H 8150 2926 50  0000 C CNN
+F 1 "MOUDLE-BLUETOOTH-HC-05(34P-27X13MM)" H 8150 2926 50  0000 C CNN
 F 2 "myKiCADLibrary:HC05" H 8150 2100 50  0001 L BNN
 F 3 "http://www.electronicaestudio.com/docs/istd016A.pdf" H 8150 2100 50  0001 L BNN
 F 4 "SOIC-14 " H 8150 2100 50  0001 L BNN "Package"
@@ -1230,10 +1230,10 @@ F 3 "" H 1600 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED R
+L Device:LED RED1
 U 1 1 5BD4FE40
 P 1900 5300
-F 0 "R" H 2000 5250 50  0000 C CNN
+F 0 "RED1" H 2000 5250 50  0000 C CNN
 F 1 "LED" H 2050 5350 50  0000 C CNN
 F 2 "LEDs:LED_0805" H 1900 5300 50  0001 C CNN
 F 3 "https://es.rs-online.com/web/c/displays-y-optoelectronica/leds-y-accesorios/led-visibles/?searchTerm=SMD%20LED&applied-dimensions=4293309965" H 1900 5300 50  0001 C CNN
@@ -1241,21 +1241,21 @@ F 3 "https://es.rs-online.com/web/c/displays-y-optoelectronica/leds-y-accesorios
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED B
+L Device:LED BLUE1
 U 1 1 5BD4FEB4
 P 1900 5450
-F 0 "B" H 2000 5400 50  0000 C CNN
-F 1 "Blue LED" H 2050 5500 50  0000 C CNN
+F 0 "BLUE1" H 2000 5400 50  0000 C CNN
+F 1 "LED" H 2050 5500 50  0000 C CNN
 F 2 "LEDs:LED_0805" H 1900 5450 50  0001 C CNN
 F 3 "https://es.rs-online.com/web/c/displays-y-optoelectronica/leds-y-accesorios/led-visibles/?searchTerm=SMD%20LED&applied-dimensions=4293309965" H 1900 5450 50  0001 C CNN
 	1    1900 5450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED O
+L Device:LED ORANGE1
 U 1 1 5BD4FF28
 P 1900 5600
-F 0 "O" H 2000 5550 50  0000 C CNN
+F 0 "ORANGE1" H 2000 5550 50  0000 C CNN
 F 1 "LED" H 2050 5650 50  0000 C CNN
 F 2 "LEDs:LED_0805" H 1900 5600 50  0001 C CNN
 F 3 "https://es.rs-online.com/web/c/displays-y-optoelectronica/leds-y-accesorios/led-visibles/?searchTerm=SMD%20LED&applied-dimensions=4293309965" H 1900 5600 50  0001 C CNN
@@ -1263,21 +1263,21 @@ F 3 "https://es.rs-online.com/web/c/displays-y-optoelectronica/leds-y-accesorios
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED Y
+L Device:LED YELLOW1
 U 1 1 5BD4FF9E
 P 1900 5750
-F 0 "Y" H 2000 5700 50  0000 C CNN
-F 1 "Yellow LED" H 2050 5800 50  0000 C CNN
+F 0 "YELLOW1" H 2000 5700 50  0000 C CNN
+F 1 "LED" H 2050 5800 50  0000 C CNN
 F 2 "LEDs:LED_0805" H 1900 5750 50  0001 C CNN
 F 3 "https://es.rs-online.com/web/c/displays-y-optoelectronica/leds-y-accesorios/led-visibles/?searchTerm=SMD%20LED&applied-dimensions=4293309965" H 1900 5750 50  0001 C CNN
 	1    1900 5750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED G
+L Device:LED GREEN1
 U 1 1 5BD50012
 P 1900 5150
-F 0 "G" H 2000 5100 50  0000 C CNN
+F 0 "GREEN1" H 2000 5100 50  0000 C CNN
 F 1 "LED" H 2050 5200 50  0000 C CNN
 F 2 "LEDs:LED_0805" H 1900 5150 50  0001 C CNN
 F 3 "https://es.rs-online.com/web/c/displays-y-optoelectronica/leds-y-accesorios/led-visibles/?searchTerm=SMD%20LED&applied-dimensions=4293309965" H 1900 5150 50  0001 C CNN
